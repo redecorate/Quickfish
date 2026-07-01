@@ -25,7 +25,7 @@ It combines environment checks from `nofish.h` with architectural checks from `Q
 | Windows x86/x64 | Supported | Best-supported target |
 | Linux x86/x64 | Supported | Uses `/sys`, `/proc`, and device metadata where available |
 | Linux ARM64 | Partially Supported | Environment checks work; x86 CPUID/RDTSC checks become no-op |
-| macOS/BSD | Not Supported | Likely never will be |
+| macOS/BSD | Not Supported | No official support planned |
 
 ## Usage
 
@@ -54,10 +54,10 @@ int main() {
 ```
 ## Intended use
 
-quickfish was developed for defensive research, lab environment classification,
+Quickfish was developed for defensive research, lab environment classification,
 compatibility testing, anti-fraud research, and VM/hypervisor study.
 
 Do not use this project to evade security software or perform unauthorized activity.
 
 ## Disclaimer
-No warranty. Use at your own risk. If it breaks, lies, misses something, or ruins your day, you own your outcome.
+Quickfish is provided as-is, without warranty. Results may be inaccurate, and false positives/false negatives are expected.

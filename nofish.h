@@ -1,20 +1,3 @@
-/* nofish.h
- * pafish is broken by VBS/HVCI on modern Windows.
- * 
- * Single-header C99 library for VM detection.
- * Distinguishes between VBS-enabled bare metal and actual VMs.
- * 
- * USAGE:
- *   #define NOFISH_IMPLEMENTATION
- *   #include "nofish.h"
- *   
- *   struct nofish_result r = nofish_detect();
- *
- *   if (r.is_vm == 2 || r.is_vm == 1) {
- *       // VM detected; handle according to your product policy.
- *   }
- */
-
 #ifndef NOFISH_H_INCLUDED
 #define NOFISH_H_INCLUDED
 

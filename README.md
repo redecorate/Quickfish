@@ -52,6 +52,44 @@ int main() {
     }
 }
 ```
+
+## Testing Result
+
+```
+PS> .\quickfish_probe.exe
+Build/platform
+  OS macro: Windows
+  Arch macro: x86
+  Compiler: MSVC 1944
+
+quickfish result
+  is_vm: 0 (no_strong_indicators)
+  combined_score: 5
+  confidence: 5
+  environment_score: 0
+  architectural_score: 5
+  reasons: CPUID hypervisor vendor: hyperv (soft signal: Hyper-V/VBS can appear on bare metal)
+
+nofish environment layer
+  is_vm: 0
+  confidence: 0
+  install_age_days: 1058
+  tpm.present: 0
+  tpm.hardware_tpm: 0
+  tpm.version: 0.0
+  tpm.manufacturer:
+  reasons: no indicators found
+
+Quicksand architectural layer
+  vendor: hyperv
+  cpuid_vendor_present: true
+  cpuid_trap_ratio: 43.94
+  cpuid_trap_threshold: 75.00
+  cpuid_trap_ratio_anomaly: false
+  vmware_backdoor_confirmed: false
+  raw_arch_score: 30
+```
+
 ## Intended use
 
 Quickfish was developed for defensive research, lab environment classification,

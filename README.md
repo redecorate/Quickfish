@@ -52,6 +52,12 @@ int main() {
     }
 }
 ```
+## Intended use
+
+quickfish was developed for defensive research, lab environment classification,
+compatibility testing, anti-fraud research, and VM/hypervisor study.
+
+Do not use this project to evade security software or perform unauthorized activity.
 
 ## Disclaimer
 No warranty. Use at your own risk. If it breaks, lies, misses something, or ruins your day, you own your outcome.
